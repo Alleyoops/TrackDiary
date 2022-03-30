@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <PreferenceCategory
+        android:title="@string/settings">
+
+        <SwitchPreference
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:key="reminder_toggle"
+            android:title="@string/daily_reminder"
+            android:defaultValue="true"/>
+
+        <EditTextPreference
+            android:dependency="reminder_toggle"
+            android:key="reminder_time"
+            android:title="@string/choose_time"
+            android:dialogLayout="@layout/preference_edit_text"
+            android:defaultValue="21:00"
+            app:useSimpleSummaryProvider="true"/>
+
+        <SwitchPreference
+            android:key="closecontactonly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:title="@string/show_close_contacts" />
+
+        <SwitchPreference
+            android:key="logNdays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:title="@string/logNdays"
+            android:defaultValue="true"
+            android:summaryOff="@string/logNdays_off"
+            android:summaryOn="@string/logNdays_on"/>
+
+        <EditTextPreference
+            android:dependency="logNdays"
+            android:key="number_of_days"
+            android:title="@string/log_number_days"
+            android:dialogLayout="@layout/preference_edit_text"
+            android:defaultValue="15"
+            android:inputType="number"
+            app:useSimpleSummaryProvider="true"/>
+
+        <ListPreference
+            android:key="theme"
+            android:title="@string/theme"
+            app:useSimpleSummaryProvider="true"
+            android:defaultValue="System"
+            android:entries="@array/theme_entries"
+            android:entryValues="@array/theme_values" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/backup" >
+            <Preference
+            android:key="export"
+            android:title="@string/export_database"
+            android:summary="@string/export_database_summary" />
+
+        <Preference
+            android:key="import"
+            android:title="@string/import_database"
+            android:summary="@string/import_database_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/more" >
+        <Preference
+            android:key="version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:title="@string/app_version_title"
+            android:summary="@string/versionName"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#006C63</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorSelected">#DADADA</color>
+    <color name="colorBackground">#FAFAFA</color>
+    <color name="colorDivider">#006C63</color>
+    <color name="colorDate">#FFFFFF</color>
+    <color name="colorDateBackground">#009688</color>
+    <color name="colorIconBackground">#009688</color>
+
+
+<!--other-->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="back">#FFF8F9FC</color>
+    <color name="gray_btn">#FFE2EDFB</color>
+    <color name="item">#FFFFCD41</color>
+</resources>

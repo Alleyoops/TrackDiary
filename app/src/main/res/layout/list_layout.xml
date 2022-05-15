@@ -9,7 +9,7 @@
         android:id="@+id/header_divider"
         android:layout_width="match_parent"
         android:layout_height="1px"
-        android:background="@color/colorDivider"
+        android:background="@color/gray_btn"
         android:layout_marginLeft="@dimen/margin_divider"
         android:layout_marginRight="@dimen/margin_divider"
         android:contextClickable="false"
@@ -21,19 +21,19 @@
         android:id="@+id/list_item_header"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorDate"
-        android:background="@color/colorDateBackground"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"
         android:visibility="gone"
         android:contextClickable="false"
-        android:padding="6dp"
+        android:padding="4dp"
         android:clickable="false" />
 
     <!-- List divider: the  line between elements -->
     <View
         android:id="@+id/list_divider"
         android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:background="@color/colorDivider"
+        android:layout_height="2px"
+        android:background="@color/gray_btn"
         android:layout_marginLeft="@dimen/margin_divider"
         android:layout_marginRight="@dimen/margin_divider"
         android:contextClickable="false" />

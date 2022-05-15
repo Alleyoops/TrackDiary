@@ -44,7 +44,7 @@
     <string name="entries_deleted">已删除记录</string>
     <string name="entries_selected">" 项记录已选择"</string>
     <string name="empty_table">点击"+"号添加记录</string>
-    <string name="app_version_title">App版本</string>
+    <string name="app_version_title">软件版本</string>
     <string name="about_donate_summary" />
     <string name="entry_duplicated">已复制记录</string>
     <string name="entries_duplicated">已复制多项记录</string>

@@ -39,7 +39,7 @@
                             android:id="@+id/event_top_duplicate_btn"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:background="@color/colorPrimary"
+                            android:background="@color/colorAccent"
                             android:src="@drawable/ic_duplicate"
                             android:paddingRight="@dimen/fab_margin_right"
                             android:onClick="duplicateEvent"
@@ -51,7 +51,7 @@
                             android:id="@+id/event_top_delete_btn"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:background="@color/colorPrimary"
+                            android:background="@color/colorAccent"
                             android:src="@drawable/ic_delete"
                             android:paddingRight="@dimen/fab_margin_right"
                             android:onClick="deleteEvent"
@@ -74,11 +74,21 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/pic3"/>
+                    android:src="@drawable/img1"/>
+                <TextView
+                    android:text="   今天你去了哪？ "
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/AppBlue"
+                    android:layout_width="wrap_content"
+                    android:paddingBottom="6dp"
+                    android:paddingHorizontal="10dp"
+                    android:layout_height="wrap_content"/>
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/shape_4"
+                    android:background="@drawable/shape_2"
                     android:hint="@string/event_name">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -93,7 +103,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:background="@drawable/shape_4"
+                    android:background="@drawable/shape_2"
                     android:hint="@string/place">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -102,6 +112,35 @@
                         android:layout_height="wrap_content"
                         android:inputType="textShortMessage|textMultiLine|textCapSentences"
                         android:imeOptions="actionNext" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/shape_2"
+                    android:hint="@string/companions">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/eventpeople_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textShortMessage|textMultiLine|textCapWords"
+                        android:imeOptions="actionNext" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/shape_2"
+                    android:hint="@string/phone">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/eventphone_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:imeOptions="actionDone" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <LinearLayout
@@ -116,7 +155,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.5"
-                        android:background="@drawable/shape_1"
+                        android:background="@drawable/indicator"
                         android:paddingHorizontal="5dp"
                         android:layout_marginRight="5dp"
                         android:gravity="center_horizontal"
@@ -126,7 +165,7 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_weight="2"
-                        android:background="@drawable/shape_4"
+                        android:background="@drawable/shape_2"
                         android:layout_height="wrap_content">
                         <EditText
                             android:id="@+id/eventdate_input"
@@ -176,7 +215,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="0.5"
-                        android:background="@drawable/shape_1"
+                        android:background="@drawable/indicator"
                         android:paddingHorizontal="5dp"
                         android:layout_marginRight="5dp"
                         android:gravity="center_horizontal"
@@ -188,7 +227,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:background="@drawable/shape_4">
+                        android:background="@drawable/shape_2">
                         <EditText
                             android:id="@+id/endeventdate_input"
                             android:layout_width="0dp"
@@ -226,42 +265,14 @@
 
                 </LinearLayout>
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:background="@drawable/shape_4"
-                    android:hint="@string/companions">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/eventpeople_input"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textShortMessage|textMultiLine|textCapWords"
-                        android:imeOptions="actionNext" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:background="@drawable/shape_4"
-                    android:hint="@string/phone">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/eventphone_input"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="phone"
-                        android:imeOptions="actionDone" />
-                </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
                     android:id="@+id/event_encounter_question"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:background="@drawable/shape_1"
+                    android:background="@drawable/indicator"
                     android:textSize="12sp"
                     android:focusable="true"
                     android:focusableInTouchMode="true"
@@ -274,7 +285,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_marginTop="2dp"
-                    android:background="@drawable/shape_4"
+                    android:background="@drawable/shape_2"
                     android:gravity="center">
 
                     <Space
@@ -320,7 +331,7 @@
                     android:layout_width="match_parent"
                     android:layout_marginTop="2dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/shape_4">
+                    android:background="@drawable/shape_2">
                     <TextView
                         android:id="@+id/event_mitigation"
                         android:layout_width="match_parent"
@@ -339,7 +350,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:background="@drawable/shape_4"
+                    android:background="@drawable/shape_2"
                     android:hint="@string/notes" >
 
                     <com.google.android.material.textfield.TextInputEditText

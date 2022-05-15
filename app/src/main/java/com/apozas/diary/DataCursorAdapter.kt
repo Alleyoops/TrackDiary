@@ -70,7 +70,7 @@ class DataCursorAdapter(context: Context?, c: Cursor?) : CursorAdapter(context, 
                 ContactDatabase.ContactDatabase.FeedEntry.TYPE_COLUMN
             )
         )
-        var entryEmoji = if(entryType == "Event") "\uD83D\uDCC5" else "\uD83D\uDC64"
+        var entryEmoji = if(entryType == "Event") "\uD83D\uDCC5" else "\uD83D\uDC68"
         entryEmoji += "   " + cursor.getString(
             cursor.getColumnIndexOrThrow(
                 ContactDatabase.ContactDatabase.FeedEntry.NAME_COLUMN

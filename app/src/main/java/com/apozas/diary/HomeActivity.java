@@ -1,10 +1,13 @@
 package com.apozas.diary;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.KeyEvent;
@@ -17,6 +20,8 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.epidemicbigdata.MainActivity2;
@@ -35,7 +40,8 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         HideBar.hideBar(this);
         WebView webView = findViewById(R.id.web2);
-        String url = "https://news.quark.cn/dailynews/v2/newslist?&aggId=8516309615177202851";
+        SharedPreferences sp = getSharedPreferences("secret",MODE_PRIVATE);
+        String url = sp.getString("url","https://news.quark.cn/dailynews/v2/newslist?entry=share&aggId=1561994950408502356&pre_page=ribao_home");
         webView.loadUrl(url);
         WebSettings mWebSettings = webView.getSettings();
         mWebSettings.setJavaScriptCanOpenWindowsAutomatically(true);//设置js可以直接打开窗口，如window.open()，默认为false
@@ -100,6 +106,30 @@ public class HomeActivity extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
+                        startActivity(new Intent().setClass(HomeActivity.this,QuarkActivity2.class));
+                    }
+                },200);
+
+            }
+        },0.8f);
+        PressAnimUtil.addScaleAnimition(findViewById(R.id.card5), new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        startActivity(new Intent().setClass(HomeActivity.this,TrackActivity.class));
+                    }
+                },200);
+
+            }
+        },0.8f);
+        PressAnimUtil.addScaleAnimition(findViewById(R.id.card6), new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
                         Toast.makeText(getApplicationContext(),"Coming···",Toast.LENGTH_SHORT).show();
                     }
                 },200);
@@ -107,6 +137,16 @@ public class HomeActivity extends AppCompatActivity {
             }
         },0.8f);
 
+
+        //秘密监听事件（嘿嘿嘿）
+        TextView secret = (TextView) findViewById(R.id.secret);
+        secret.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                inputTitleDialog();
+                return false;
+            }
+        });
 
 
     }
@@ -118,5 +158,28 @@ public class HomeActivity extends AppCompatActivity {
             return true;
         }
         return super.onKeyDown(keyCode, event);
+    }
+
+    //秘密弹出窗口
+    private void inputTitleDialog() {
+
+        final EditText inputServer = new EditText(this);
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("输入链接").setIcon(android.R.drawable.ic_dialog_info).setView(inputServer)
+                .setNegativeButton("Cancel", null);
+        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+
+            public void onClick(DialogInterface dialog, int which) {
+                String url = inputServer.getText().toString();
+                SharedPreferences sp = getSharedPreferences("secret",MODE_PRIVATE);
+                SharedPreferences.Editor editor = sp.edit();
+                editor.putString("url",url);
+                editor.apply();
+                WebView webView = findViewById(R.id.web2);
+                webView.loadUrl(url);
+            }
+        });
+        builder.show();
+
     }
 }

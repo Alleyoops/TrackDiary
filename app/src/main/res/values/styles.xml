@@ -18,6 +18,15 @@
         <item name="android:actionModeBackground">@color/colorAccent</item>
         <item name="android:windowBackground">@color/colorBackground</item>
     </style>
+    <style name="AppThemeQuark2" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#00B687</item>
+        <item name="colorPrimaryDark">#00B687</item>
+        <item name="colorAccent">#40C4FF</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:actionModeBackground">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+    </style>
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>

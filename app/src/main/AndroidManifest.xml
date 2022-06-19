@@ -14,16 +14,25 @@
         android:theme="@style/AppTheme"
         tools:replace="android:icon, android:theme">
         <activity
-            android:name=".QuarkActivity"
-            android:label="疫情地图"
-            android:theme="@style/AppThemeQuark"
-            android:screenOrientation="portrait"
+            android:name=".TrackActivity"
+            android:label="活动轨迹"
             android:exported="false" />
         <activity
-            android:name=".WelcomeActivity"
-            android:theme="@style/AppTheme.NoActionBarWel"
+            android:name=".QuarkActivity2"
+            android:label="核酸检测"
             android:screenOrientation="portrait"
-            android:exported="true" >
+            android:theme="@style/AppThemeQuark2" />
+        <activity
+            android:name=".QuarkActivity"
+            android:exported="false"
+            android:label="疫情地图"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeQuark" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarWel">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,17 +41,15 @@
         </activity>
         <activity
             android:name=".HomeActivity"
+            android:exported="true"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="true">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="false"
             android:label="轨迹记录"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
-
             <meta-data
                 android:name="android.app.shortcuts"
                 android:resource="@xml/shortcuts" />

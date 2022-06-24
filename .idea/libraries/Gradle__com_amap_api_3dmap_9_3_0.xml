@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amap.api:3dmap:9.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amap.api/3dmap/9.3.0/1fa5803762b304028c1ce1d69ba04431eb2fb337/3dmap-9.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amap.api/3dmap/9.3.0/67c385fb669d320c1742b7b2d43cb05ca2ab0aad/3dmap-9.3.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amap.api/3dmap/9.3.0/67c385fb669d320c1742b7b2d43cb05ca2ab0aad/3dmap-9.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

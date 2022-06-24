@@ -27,6 +27,15 @@
         <item name="android:actionModeBackground">@color/colorAccent</item>
         <item name="android:windowBackground">@color/colorBackground</item>
     </style>
+    <style name="AppThemeTrack" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#629BF8</item>
+        <item name="colorPrimaryDark">#629BF8</item>
+        <item name="colorAccent">#40C4FF</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:actionModeBackground">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+    </style>
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>

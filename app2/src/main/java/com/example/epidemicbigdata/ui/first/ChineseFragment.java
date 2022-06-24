@@ -113,6 +113,7 @@ public class ChineseFragment extends Fragment {
 
         LocationClientOption option = new LocationClientOption();  //地图配置选项
         option.setLocationMode(LocationClientOption.LocationMode.Battery_Saving);  //节能
+        option.setCoorType("bd09ll"); // 设置坐标类型
         option.setIsNeedAddress(true);  //需要详细地址信息
         option.setScanSpan(0);  //只获取一次信息
         mLocationClient.setLocOption(option); //加载配置

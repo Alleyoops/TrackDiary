@@ -1,3 +1,4 @@
 include ':app'
 rootProject.name = "Track Diary"
 include ':app2'
+include ':app3'

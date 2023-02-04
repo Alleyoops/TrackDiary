@@ -42,45 +42,29 @@
 <!--            android:value="MYm8ijvOFsYgSFQew4xO6axGHBFbRcrW" />-->
 <!--        高德地图sdk-->
 <!--        定位sdk service组件-->
-        <service android:name="com.amap.api.location.APSService" />
-        <meta-data
-            android:name="com.amap.api.v2.apikey"
-            android:value="f49be0ef6304b4b561721a1b818796fe"/>
+<!--        <service android:name="com.amap.api.location.APSService" />-->
+<!--        <meta-data-->
+<!--            android:name="com.amap.api.v2.apikey"-->
+<!--            android:value="f49be0ef6304b4b561721a1b818796fe"/>-->
+
+
         <activity
-            android:name=".TrackActivity"
-            android:label="活动轨迹"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeTrack"  />
-        <activity
-            android:name=".QuarkActivity2"
-            android:label="核酸检测"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeQuark2" />
-        <activity
-            android:name=".QuarkActivity"
-            android:exported="false"
-            android:label="疫情地图"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeQuark" />
-        <activity
-            android:name=".WelcomeActivity"
+            android:name=".HomepageActivity"
             android:exported="true"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBarWel">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter >
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="my.android.action.test"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
             </intent-filter>
         </activity>
-        <activity
-            android:name=".HomeActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".MainActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="轨迹记录"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">

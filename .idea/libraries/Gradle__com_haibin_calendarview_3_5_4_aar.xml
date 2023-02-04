@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.haibin:calendarview:3.5.4@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a0f9602aa8d5566fb99255b05a981c97/jetified-calendarview-3.5.4/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a0f9602aa8d5566fb99255b05a981c97/jetified-calendarview-3.5.4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a0f9602aa8d5566fb99255b05a981c97/jetified-calendarview-3.5.4/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haibin/calendarview/3.5.4/1e9167d5f1ef048d3f44c8efc2b96a3ca0a262be/calendarview-3.5.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haibin/calendarview/3.5.4/2707df0aaa462743585ac3016e717e0136e4ba69/calendarview-3.5.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

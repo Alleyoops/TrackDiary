@@ -27,7 +27,8 @@
         <entry key="..\:/GitClone/TrackDiary/track_diary/app/src/main/res/layout/activity_addevent_inside.xml" value="0.38190954773869346" />
         <entry key="..\:/GitClone/TrackDiary/track_diary/app/src/main/res/layout/activity_editcontact.xml" value="0.264" />
         <entry key="..\:/GitClone/TrackDiary/track_diary/app/src/main/res/layout/activity_editevent.xml" value="0.176" />
-        <entry key="..\:/GitClone/TrackDiary/track_diary/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app/src/main/res/layout/activity_home.xml" value="0.4" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app/src/main/res/layout/activity_homepage.xml" value="0.264" />
         <entry key="..\:/GitClone/TrackDiary/track_diary/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/GitClone/TrackDiary/track_diary/app/src/main/res/layout/activity_main_inside.xml" value="0.264" />
         <entry key="..\:/GitClone/TrackDiary/track_diary/app/src/main/res/layout/activity_preferences.xml" value="0.14010416666666667" />
@@ -63,6 +64,27 @@
         <entry key="..\:/GitClone/TrackDiary/track_diary/app2/src/main/res/layout/item_news.xml" value="0.264" />
         <entry key="..\:/GitClone/TrackDiary/track_diary/app2/src/main/res/layout/item_province.xml" value="0.3229166666666667" />
         <entry key="..\:/GitClone/TrackDiary/track_diary/app2/src/main/res/menu/bottom_nav_menu.xml" value="0.321875" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app3/src/main/res/drawable/back_selector.xml" value="0.26979166666666665" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app3/src/main/res/drawable/back_selector_n.xml" value="0.26979166666666665" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app3/src/main/res/drawable/green_round.xml" value="0.26979166666666665" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app3/src/main/res/drawable/ic_baseline_delete_sweep_24.xml" value="0.26979166666666665" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app3/src/main/res/drawable/layer_splash.xml" value="0.21145833333333333" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app3/src/main/res/layout/activity_home.xml" value="0.25364583333333335" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app3/src/main/res/layout/activity_homepage.xml" value="0.1890625" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app3/src/main/res/layout/activity_login.xml" value="0.25364583333333335" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app3/src/main/res/layout/activity_mid.xml" value="0.1890625" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app3/src/main/res/layout/activity_regist.xml" value="0.25364583333333335" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app3/src/main/res/layout/activity_splash.xml" value="0.25364583333333335" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app3/src/main/res/layout/activity_sportmap.xml" value="0.25364583333333335" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app3/src/main/res/layout/activity_sportrecorddetails.xml" value="0.25364583333333335" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app3/src/main/res/layout/activity_sportresult.xml" value="0.25364583333333335" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app3/src/main/res/layout/activity_sports.xml" value="0.264" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app3/src/main/res/layout/adapter_sportcalendar.xml" value="0.25364583333333335" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app3/src/main/res/layout/fragment_sportrecorddetailsmap.xml" value="0.25364583333333335" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app3/src/main/res/layout/fragment_sportrecorddetailsspeed.xml" value="0.25364583333333335" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app3/src/main/res/layout/layout_sport_result_tip.xml" value="0.25364583333333335" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app3/src/main/res/layout/layout_title.xml" value="0.25364583333333335" />
+        <entry key="..\:/GitClone/TrackDiary/track_diary/app3/src/main/res/layout/tip_dialog_layout.xml" value="0.25364583333333335" />
       </map>
     </option>
   </component>

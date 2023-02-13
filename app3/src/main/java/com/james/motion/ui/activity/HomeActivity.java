@@ -248,8 +248,8 @@ public class HomeActivity extends BaseActivity {
         } else if (id == R.id.reRight) {
             startActivityForResult(new Intent(HomeActivity.this, SportsActivity.class), SPORT);
         } else if (id == R.id.reBack) {
-            showTipDialog("退出登录",
-                    "退出登录后将会删除历史数据,\n下次登录依然可以使用本账号!",
+            showTipDialog("删除数据",
+                    "删除历史数据后将会退出登录,\n下次登录依然可以使用本账号!",
                     () -> logOut());
         }
     }

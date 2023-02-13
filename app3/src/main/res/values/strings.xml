@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Motion</string>
+    <string name="app_name">Track_Diary</string>
 
     <string name="splash_appversionname">Android V%1$s</string>
 
@@ -10,6 +10,8 @@
     <string name="date_month_day">%1$s月%2$s日</string>
     <string name="date_year_month_day">%1$s-%2$s-%3$s</string>
     <string name="time_hour_minuts">%1$s:%2$s</string>
+
+    <string name="recommend_tip">\t\t\t\t我们会根据用户的BMI指数和年龄来为用户指定理想的跑步方案，用户可以参考并指定自己的跑步计划。</string>
 
     <string-array name="chinese_week_string_array">
         <item>周日</item>

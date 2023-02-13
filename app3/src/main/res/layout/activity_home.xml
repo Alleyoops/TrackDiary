@@ -135,7 +135,7 @@
                     android:contentDescription="@string/app_name"
                     android:scaleType="centerInside"
                     android:src="@mipmap/ic_calendar"
-                    android:tint="#000000" />
+                    app:tint="#000000" />
 
                 <TextView
                     android:id="@+id/tv_current_day"
@@ -253,7 +253,7 @@
                         android:paddingLeft="@dimen/margin_edge"
                         android:paddingRight="@dimen/margin_edge"
                         android:paddingBottom="@dimen/margin_edge_20"
-                        android:text="刚开始不要追求跑步速度和距离,一坚持更久为目的吧!"
+                        android:text="刚开始不要追求跑步速度和距离,以坚持更久为目的吧!"
                         android:textColor="@color/text_color_2"
                         android:textSize="@dimen/textsize_4" />
                 </LinearLayout>

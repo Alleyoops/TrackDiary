@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:text="0.00"
                 android:textSize="@dimen/textsize_6"
-                android:textColor="@color/text_color_3"
+                android:textColor="@color/text_color_2"
                 android:textStyle="bold" />
 
             <TextView
@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:text="0.00"
                 android:textSize="@dimen/textsize_6"
-                android:textColor="@color/text_color_3"
+                android:textColor="@color/text_color_2"
                 android:textStyle="bold" />
 
             <TextView
@@ -76,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:text="0"
                 android:textSize="@dimen/textsize_6"
-                android:textColor="@color/text_color_3"
+                android:textColor="@color/text_color_2"
                 android:textStyle="bold" />
 
             <TextView

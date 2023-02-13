@@ -22,6 +22,10 @@ import com.james.motion.commmon.utils.Utils;
 import com.james.motion.db.DataManager;
 import com.james.motion.db.RealmHelper;
 import com.james.motion.ui.BaseActivity;
+import com.james.motion.ui.weight.SecuritySP;
+
+import java.io.IOException;
+import java.security.GeneralSecurityException;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -40,6 +44,16 @@ public class RegistActivity extends BaseActivity {
     EditText etCheckPsd;
     @BindView(R2.id.bt_regist)
     Button btRegist;
+
+
+    @BindView(R2.id.et_tall)
+    EditText etTall;
+    @BindView(R2.id.et_heavy)
+    EditText etHeavy;
+    @BindView(R2.id.et_age)
+    EditText etAge;
+
+
 
     private String code = "-1";
 
@@ -103,7 +117,7 @@ public class RegistActivity extends BaseActivity {
                 return;
             }
 
-            // 先影藏输入法
+            // 先隐藏输入法
             hideSoftKeyBoard();
 
             yanZhengMa();
@@ -158,6 +172,14 @@ public class RegistActivity extends BaseActivity {
             if (dataManager.checkAccount(etAccount.getText().toString())) {
                 ToastUtils.showShort("账号已存在！");
             } else {
+
+                //保存身高体重数据
+                try {
+                    saveData();
+                } catch (GeneralSecurityException | IOException e) {
+                    e.printStackTrace();
+                }
+
                 ToastUtils.showShort("恭喜您,注册成功...");
                 UserAccount userAccount = new UserAccount();
                 userAccount.setAccount(etAccount.getText().toString());
@@ -173,5 +195,16 @@ public class RegistActivity extends BaseActivity {
         if (null != dataManager)
             dataManager.closeRealm();
         super.onDestroy();
+    }
+
+    public void saveData() throws GeneralSecurityException, IOException {
+        String tall,heavy,age;
+        tall = etTall.getText().toString();
+        heavy = etHeavy.getText().toString();
+        age = etAge.getText().toString();
+        SecuritySP.EncryptSP(this,"tall",tall);
+        SecuritySP.EncryptSP(this,"heavy",heavy);
+        SecuritySP.EncryptSP(this,"age",age);
+
     }
 }

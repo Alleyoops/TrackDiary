@@ -218,6 +218,89 @@
                 <!--android:background="@drawable/et_underline"-->
 
             </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_edge_20"
+                android:layout_marginTop="@dimen/item_edge"
+                android:layout_marginRight="@dimen/margin_edge_20">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/item_edge"
+                    android:src="@mipmap/icon_sport" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/item_edge"
+                    android:layout_toRightOf="@+id/imageView7"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_tall"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="身高(cm)"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"
+                        android:lines="1"
+                        android:maxLength="16"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/text_color_white"
+                        android:textColorHint="@color/text_color_3"
+                        android:textCursorDrawable="@drawable/bg_edittext"
+                        android:textSize="@dimen/textsize_4" />
+
+                    <EditText
+                        android:id="@+id/et_heavy"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/item_edge"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="体重(kg)"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"
+                        android:lines="1"
+                        android:maxLength="16"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/text_color_white"
+                        android:textColorHint="@color/text_color_3"
+                        android:textCursorDrawable="@drawable/bg_edittext"
+                        android:textSize="@dimen/textsize_4" />
+
+                    <EditText
+                        android:id="@+id/et_age"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/item_edge"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="年龄"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"
+                        android:lines="1"
+                        android:maxLength="16"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/text_color_white"
+                        android:textColorHint="@color/text_color_3"
+                        android:textCursorDrawable="@drawable/bg_edittext"
+                        android:textSize="@dimen/textsize_4" />
+                </LinearLayout>
+
+            </RelativeLayout>
 
             <Button
                 android:id="@+id/bt_regist"

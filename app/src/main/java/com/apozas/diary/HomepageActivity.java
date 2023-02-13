@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import com.example.epidemicbigdata.MainActivity2;
 import com.james.motion.ui.activity.HomeActivity;
+import com.james.motion.ui.activity.PlanActivity;
 import com.james.motion.ui.activity.SportsActivity;
 
 public class HomepageActivity extends AppCompatActivity {
@@ -63,13 +64,25 @@ public class HomepageActivity extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        startActivity(new Intent().setClass(HomepageActivity.this,MainActivity.class));
+                        startActivity(new Intent().setClass(HomepageActivity.this, PlanActivity.class));
                     }
                 },200);
 
             }
         },0.8f);
         PressAnimUtil.addScaleAnimition(findViewById(R.id.card2), new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        startActivity(new Intent().setClass(HomepageActivity.this,MainActivity.class));
+                    }
+                },200);
+
+            }
+        },0.8f);
+        PressAnimUtil.addScaleAnimition(findViewById(R.id.card22), new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 new Handler().postDelayed(new Runnable() {
@@ -106,6 +119,7 @@ public class HomepageActivity extends AppCompatActivity {
 
             }
         },0.8f);
+
 
 
         //秘密监听事件（嘿嘿嘿）

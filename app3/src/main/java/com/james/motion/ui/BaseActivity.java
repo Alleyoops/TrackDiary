@@ -25,6 +25,8 @@ import com.james.motion.commmon.utils.LogUtils;
 import com.james.motion.commmon.utils.Utils;
 import com.james.motion.ui.weight.CustomProgressDialog;
 
+import java.io.IOException;
+import java.security.GeneralSecurityException;
 import java.util.List;
 
 import butterknife.ButterKnife;
@@ -90,13 +92,17 @@ public abstract class BaseActivity extends PermissionActivity {
         progressDialog = new CustomProgressDialog(this);
         inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
 
-        initData(savedInstanceState);
+        try {
+            initData(savedInstanceState);
+        } catch (GeneralSecurityException | IOException e) {
+            e.printStackTrace();
+        }
         initListener();
     }
 
     public abstract int getLayoutId();
 
-    public abstract void initData(Bundle savedInstanceState);
+    public abstract void initData(Bundle savedInstanceState) throws GeneralSecurityException, IOException;
 
     public abstract void initListener();
 

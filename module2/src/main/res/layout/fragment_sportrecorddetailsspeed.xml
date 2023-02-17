@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_edge_20">
+    <TextView
+        android:id="@+id/tvReward"
+        android:text="100"
+        android:layout_gravity="center"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dp_40"
+        android:textColor="@color/text_color_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:src="@drawable/reword"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_edge_20"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:layout_marginVertical="@dimen/margin_edge_20"
+        android:background="@color/divider_color" />
+<RelativeLayout
+    android:layout_marginVertical="@dimen/dp_10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_vertical"
+        android:text="里程"
+        android:textColor="@color/text_color_2"
+        android:textSize="@dimen/textsize_3" />
+
+    <TextView
+        android:id="@+id/tvDist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_vertical"
+        android:text="0"
+        android:textColor="@color/text_color_red"
+        android:textSize="@dimen/textsize_4" />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_marginVertical="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical"
+            android:text="时长"
+            android:textColor="@color/text_color_2"
+            android:textSize="@dimen/textsize_3" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_vertical"
+            android:text="0"
+            android:textColor="@color/text_color_red"
+            android:textSize="@dimen/textsize_4" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginVertical="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical"
+            android:text="消耗热量"
+            android:textColor="@color/text_color_2"
+            android:textSize="@dimen/textsize_3" />
+
+        <TextView
+            android:id="@+id/tvCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_vertical"
+            android:text="0"
+            android:textColor="@color/text_color_red"
+            android:textSize="@dimen/textsize_4" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginVertical="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical"
+            android:text="完成任务"
+            android:textColor="@color/text_color_2"
+            android:textSize="@dimen/textsize_3" />
+
+        <TextView
+            android:id="@+id/tvFinishPlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_vertical"
+            android:text="0"
+            android:textColor="@color/text_color_red"
+            android:textSize="@dimen/textsize_4" />
+    </RelativeLayout>
+</LinearLayout>

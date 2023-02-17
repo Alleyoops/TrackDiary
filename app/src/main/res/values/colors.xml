@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#009688</color>
     <color name="colorPrimaryDark">#006C63</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorAccent">#454545</color>
     <color name="colorSelected">#DADADA</color>
     <color name="colorBackground">#FAFAFA</color>
     <color name="colorDivider">#006C63</color>
@@ -22,4 +22,5 @@
     <color name="back">#FFF8F9FC</color>
     <color name="gray_btn">#FFE2EDFB</color>
     <color name="item">#FFFFCD41</color>
+
 </resources>

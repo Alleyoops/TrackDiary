@@ -4,38 +4,12 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorAccent</item>
         <item name="colorPrimaryDark">@color/colorAccent</item>
-        <item name="colorAccent">#40C4FF</item>
+        <item name="colorAccent">@color/text_color_green</item>
         <item name="windowActionModeOverlay">true</item>
         <item name="android:actionModeBackground">@color/colorAccent</item>
         <item name="android:windowBackground">@color/colorBackground</item>
     </style>
-    <style name="AppThemeQuark" parent="Theme.AppCompat.DayNight.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">#9BA0E6</item>
-        <item name="colorPrimaryDark">#9BA0E6</item>
-        <item name="colorAccent">#40C4FF</item>
-        <item name="windowActionModeOverlay">true</item>
-        <item name="android:actionModeBackground">@color/colorAccent</item>
-        <item name="android:windowBackground">@color/colorBackground</item>
-    </style>
-    <style name="AppThemeQuark2" parent="Theme.AppCompat.DayNight.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">#00B687</item>
-        <item name="colorPrimaryDark">#00B687</item>
-        <item name="colorAccent">#40C4FF</item>
-        <item name="windowActionModeOverlay">true</item>
-        <item name="android:actionModeBackground">@color/colorAccent</item>
-        <item name="android:windowBackground">@color/colorBackground</item>
-    </style>
-    <style name="AppThemeTrack" parent="Theme.AppCompat.DayNight.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">#629BF8</item>
-        <item name="colorPrimaryDark">#629BF8</item>
-        <item name="colorAccent">#40C4FF</item>
-        <item name="windowActionModeOverlay">true</item>
-        <item name="android:actionModeBackground">@color/colorAccent</item>
-        <item name="android:windowBackground">@color/colorBackground</item>
-    </style>
+
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>

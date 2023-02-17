@@ -69,14 +69,14 @@
             android:summary="@string/import_database_summary" />
     </PreferenceCategory>
 
-    <PreferenceCategory
-        android:title="@string/more" >
-        <Preference
-            android:key="version"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:title="@string/app_version_title"
-            android:summary="@string/versionName"/>
-    </PreferenceCategory>
+<!--    <PreferenceCategory-->
+<!--        android:title="@string/more" >-->
+<!--        <Preference-->
+<!--            android:key="version"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:title="@string/app_version_title"-->
+<!--            android:summary="@string/versionName"/>-->
+<!--    </PreferenceCategory>-->
 
 </PreferenceScreen>

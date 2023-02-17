@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./module1/libs/BaiduLBS_Android.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/module1/libs/BaiduLBS_Android.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

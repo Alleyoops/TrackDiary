@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.james.motion"
+    package="com.example.motion"
     tools:ignore="ProtectedPermissions">
     <!-- 允许程序打开网络套接字 -->
     <uses-permission android:name="android.permission.INTERNET" /> <!-- 允许程序设置内置sd卡的写权限 -->
@@ -119,7 +119,7 @@
         <service android:name="com.amap.api.location.APSService" /> <!-- 开发者申请的key -->
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="2eb357794df11732e9bbbb15662a289a" /> <!-- 计步定位服务 -->
+            android:value="f49be0ef6304b4b561721a1b818796fe" /> <!-- 计步定位服务 -->
         <service
             android:name=".sport_motion.LocationService"
             android:enabled="true"
@@ -127,7 +127,7 @@
 
             <!-- exported属性，指示该服务是否能够被其他应用程序组件调用或跟它交互 -->
             <intent-filter android:priority="1000">
-                <action android:name="com.james.motion.sport_motion.LocationService" />
+                <action android:name="com.alleyoop.motion.sport_motion.LocationService" />
             </intent-filter>
         </service>
     </application>

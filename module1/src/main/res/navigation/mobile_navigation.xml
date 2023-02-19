@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.epidemicbigdata.ui.first.FirstFragment"
+        android:name="com.example.coviddata.ui.first.FirstFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_first" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.example.epidemicbigdata.ui.second.SecondFragment"
+        android:name="com.example.coviddata.ui.second.SecondFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_second" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.epidemicbigdata.ui.third.ThirdFragment"
+        android:name="com.example.coviddata.ui.third.ThirdFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_third" />
 </navigation>

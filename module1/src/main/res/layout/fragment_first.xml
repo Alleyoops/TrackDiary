@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.first.FirstFragment">
+    tools:context="com.example.coviddata.ui.first.FirstFragment">
 
     <com.google.android.material.tabs.TabLayout
         app:tabSelectedTextColor="#ffffff"

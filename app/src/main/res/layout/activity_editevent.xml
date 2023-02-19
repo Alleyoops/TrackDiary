@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/editeventlayout"
-    tools:context=".EditEventActivity">
+    tools:context="com.alleyoop.diary.EditEventActivity">
 
     <include
         android:id="@+id/activity_editevent_inside"

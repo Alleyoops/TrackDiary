@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/neweventlayout"
-    tools:context=".EditEventActivity">
+    tools:context="com.alleyoop.diary.EditEventActivity">
 
     <ScrollView
         android:layout_width="match_parent"

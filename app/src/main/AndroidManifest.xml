@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.apozas.diary">
+    package="com.alleyoop.diary">
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
@@ -49,7 +49,7 @@
 
 
         <activity
-            android:name=".HomepageActivity"
+            android:name="com.alleyoop.diary.HomepageActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" >
@@ -63,7 +63,7 @@
         </activity>
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.alleyoop.diary.MainActivity"
             android:exported="true"
             android:label="自律笔记"
             android:screenOrientation="portrait"
@@ -73,13 +73,13 @@
                 android:resource="@xml/shortcuts" />
         </activity>
         <activity
-            android:name=".NewContactActivity"
+            android:name="com.alleyoop.diary.NewContactActivity"
             android:label="@string/new_contact"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".NewEventActivity"
+            android:name="com.alleyoop.diary.NewEventActivity"
             android:exported="true"
             android:label="@string/new_event"
             android:screenOrientation="portrait"
@@ -94,30 +94,30 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".EditContactActivity"
+            android:name="com.alleyoop.diary.EditContactActivity"
             android:label="@string/edit_contact"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".EditEventActivity"
+            android:name="com.alleyoop.diary.EditEventActivity"
             android:label="@string/edit_event"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".SettingsActivity"
+            android:name="com.alleyoop.diary.SettingsActivity"
             android:label="@string/options"
             android:launchMode="singleTop"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="com.alleyoop.diary.MainActivity"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.alleyoop.diary.MainActivity" />
         </activity>
 
         <receiver
-            android:name=".NotificationReceiver"
+            android:name="com.alleyoop.diary.NotificationReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>

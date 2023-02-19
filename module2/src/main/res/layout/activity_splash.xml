@@ -13,7 +13,7 @@
         android:scaleType="centerCrop"
         android:src="@mipmap/splash_bg" />
 
-    <com.james.motion.ui.weight.CountDownProgressView
+    <com.example.motion.ui.weight.CountDownProgressView
         android:id="@+id/countdownProgressView"
         android:layout_width="40dp"
         android:layout_height="40dp"
